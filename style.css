@@ -57,6 +57,7 @@ a:hover {
     grid-template-rows: 1fr 2fr 2fr;
     align-items: center;
     justify-content: center;
+    max-width: 287px;
 }
 
 #main-content {
