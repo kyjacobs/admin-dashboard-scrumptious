@@ -34,6 +34,10 @@ body {
     text-align: center;
     grid-column: 1 / 2;
     grid-row: 1 / 6;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    align-items: center;
+    justify-content: center;
 }
 
 #main-content {
@@ -85,6 +89,24 @@ input {
 
 .greeting-wrapper {
     justify-self: start;
+}
+
+.logo {
+    align-self: start;
+    padding: 2rem 1rem 1rem 1rem;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    padding: 1em;
+    align-items: center;
+    font-size: 18px;
+}
+
+.nav-link {
+    font-weight: bold;
 }
 
 button {
