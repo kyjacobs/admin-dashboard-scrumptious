@@ -30,7 +30,7 @@ a:hover {
 
 #wrapper {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(5, 1fr);
     height: 100vh;
 }
