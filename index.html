@@ -12,22 +12,22 @@
    <div id="wrapper">
         <div id="header">
             <div class="input-wrapper">
-                <i class="material-icons">search</i>
-                <input type="text" placeholder="Search" id="searchbar">
+                <i class="material-icons flex-item">search</i>
+                <input type="text flex-item" placeholder="Search" id="searchbar">
             </div>
             <div class="profile-wrapper">
-                <i class="material-icons">notifications_active</i>
-                <div class="pfp"></div>
-                <span style="font-weight: bold;">Kyle Jacobs</span>
+                <i class="material-icons flex-item">notifications_active</i>
+                <div class="pfp flex-item"></div>
+                <span class="flex-item" style="font-weight: bold;">Kyle Jacobs</span>
             </div>
             <div class="greeting-wrapper">
-                <div class="pfp" style="width: 70px; height: 70px;"></div>
-                <span class="username"><strong>Hi there,</strong> <br><span style="font-size: 24px; font-weight: bold;">Kyle Jacobs (@kyeasy)</span></span>
+                <div class="pfp flex-item" style="width: 70px; height: 70px;"></div>
+                <span class="username flex-item"><strong>Hi there,</strong> <br><span style="font-size: 24px; font-weight: bold;">Kyle Jacobs (@kyeasy)</span></span>
             </div>
             <div class="button-wrapper">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <button class="header-btn">New</button>
+                <button class="header-btn">Upload</button>
+                <button class="header-btn">Share</button>
             </div>
         </div>
         <div id="sidebar">
@@ -94,7 +94,28 @@
                 </div>
             </div>
         </div>
-        <div id="main-content">Main Content</div>
+        <div id="main-content">
+            <div class="to-do">
+                <span class="column-header">To-do</span>
+                <div class="card">
+                    <h2 class="card-header">Title</h2>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Nunc faucibus a pellentesque sit amet. Dictum fusce ut 
+                        placerat orci nulla.</p>
+                    <div class="button-container">
+                        <button class="card-button btn-complete"><i class="material-icons">done</i></button>
+                        <button class="card-button btn-in-progress"><i class="material-icons">arrow_forward</i></button>
+                        <button class="card-button btn-incomplete"><i class="material-icons">close</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="in-progress">
+                <span class="column-header">In progress</span>
+            </div>
+            <div class="complete">
+                <span class="column-header">Complete</span>
+            </div>
+        </div>
    </div>
 </body>
 </html>
