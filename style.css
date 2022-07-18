@@ -18,6 +18,16 @@ a {
     font-size: 18px;
 }
 
+h2 {
+    padding-top: 10px;
+}
+
+p {
+    padding: 1rem;
+    text-align: left;
+    overflow: scroll;
+}
+
 a:visited {
     text-decoration: inherit;
     color: inherit;
@@ -25,13 +35,13 @@ a:visited {
 
 a:hover {
     background-color: #ffffff20;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1fr repeat(4, 2fr);
     height: 100vh;
 }
 
@@ -60,11 +70,57 @@ a:hover {
 }
 
 #main-content {
-    background-color: #03dac6;
+    background-color: #121212;
     color: #121212;
     text-align: center;
     grid-column: 2 / 3;
     grid-row: 2 / 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 8px;
+    /*
+    grid-template-rows: 1fr repeat(3, 4fr);
+    grid-auto-rows: 4fr;
+    */
+}
+
+.column-header {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.to-do, .in-progress, .complete {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+}
+
+.card {
+    border-radius: 8px;
+    height: 200px;
+    width: auto;
+    margin: 5px;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff15;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 5px #cf6679;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    box-shadow: 0px 10px #cf6679;
+}
+
+.card-header {
+    text-align: left;
+    margin-left: 1rem;
 }
 
 .pfp {
@@ -87,6 +143,10 @@ input {
     padding: 5px;
     margin-left: 0.5rem;
     width: 40vw;
+}
+
+.flex-item {
+    flex-shrink: 1;
 }
 
 .input-wrapper, .profile-wrapper, 
@@ -123,7 +183,7 @@ input {
 
 .navigation, .branding {
     background-color: #FFFFFF10;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px;
 }
 
@@ -142,11 +202,45 @@ input {
     font-weight: bold;
 }
 
-button {
+.header-btn {
     height: 45px;
     width: 100px;
     border-radius: 25px;
     border: none;
     background-color: #bb86fc;
 }
+
+.card-button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.button-container {
+    align-self: end;
+    margin-right: 1rem;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.btn-complete {
+    border: 1px solid #03dac6;
+    color: #03dac6;
+    background-color: transparent;
+}
+
+.btn-in-progress {
+    border: 1px solid orange;
+    color: orange;
+    background-color: transparent;
+}
+
+.btn-incomplete {
+    border: 1px solid #cf6679;
+    color: #cf6679;
+    background-color: transparent;
+}
+
+
 
