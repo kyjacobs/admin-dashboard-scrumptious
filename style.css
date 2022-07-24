@@ -151,7 +151,10 @@ a:hover {
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    background-color: #ffffff87;
+    background-image: url(./assets/img/Medieval-cat-painting-from-EuropeX.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .username {
@@ -184,9 +187,12 @@ input {
     gap: 1.5em;
 }
 
-.profile-wrapper, 
-.button-wrapper {
+.profile-wrapper {
     justify-self: end;
+}
+
+.button-wrapper {
+    justify-self: center;
 }
 
 .greeting-wrapper {
@@ -234,6 +240,15 @@ input {
     font-size: 14px;
     font-weight: bold;
     color: #121212;
+}
+
+.header-btn:hover {
+    background-color: #882cf8;
+}
+
+.header-btn:active {
+    transform: translateX(1px);
+    transform: translateY(2px);
 }
 
 .card-button {
